@@ -1,0 +1,17 @@
+(* How to use this ??? *)
+#use "topfind";;
+#require "yojson";;
+open Yojson.Basic;;
+open Yojson.Basic.Util;;
+#require "core";;
+open Core;;
+
+(* #use will make each function in the .ml file available like typing them directly in the utop *)
+(* #use "/home/zw/code/ocaml-programming/ocaml_in_action/lib/tools/math.ml" *)
+
+(* #load will load compile module's compiled bytecode. The module will be available for use *)
+(* Why load compile library doesn't work *)
+(* #directory "_build/default/lib";; *)
+(* #load "_build/default/lib/tools/.tools.objs/byte/tools.cmo";;  *)
+(* #load "_build/default/lib/tools/.tools.objs/byte/tools__Common.cmo";; *)
+(* #load "_build/default/lib/tools/.tools.objs/byte/tools__Math.cmo" *)

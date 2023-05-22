@@ -1,3 +1,0 @@
-(executable
- (name hello_lib)
- (libraries my_tool))
