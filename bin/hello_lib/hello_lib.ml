@@ -3,6 +3,6 @@ open My_tool
 let () = 
   (* let build_dir = (Filename.dirname Sys.argv.(0)) in  *)
   print_endline Common.message;
-  Common.parse_json_demo "/Users/zw/code/ocaml_programming/ocaml_in_action_tmp/tmp/book.json"
+  Common.parse_json_demo "/home/zw/code/ocaml-programming/ocaml_in_action/tmp/book.json"
 
 

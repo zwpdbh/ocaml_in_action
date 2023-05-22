@@ -7,7 +7,8 @@
   opam switch create . ocaml-base-compiler 5.0.0
   opam install utop ocamlformat ocaml-lsp-server
   ```
-  Now, open it from vscode.
+   - Now, open it from vscode.
+   - If you found env doesn't pickup the commands, such as `dune`. Run `eval $(opam env)` in the terminal to sync with opam env. 
 
 # How to build and run
 Use `hello_lwt` as example, in the root of our project: 
