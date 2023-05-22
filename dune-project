@@ -19,7 +19,11 @@
   (name ocaml_in_action)
   (synopsis "A short synopsis")
   (description "A longer description")
-  (depends ocaml dune lwt.unix)
+  (depends 
+    ocaml 
+    dune
+    lwt 
+    )
   (tags
     (topics "to describe" your project)))
 
