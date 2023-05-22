@@ -23,6 +23,7 @@
     ocaml 
     dune
     lwt 
+    yojson
     )
   (tags
     (topics "to describe" your project)))
