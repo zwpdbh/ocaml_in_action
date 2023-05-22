@@ -1,7 +1,8 @@
 open My_tool
-
-let () = print_endline Common.message
-
+(* dune exec -- bin/hello_lib/hello_lib.exe *)
 let () = 
-  let json_parsed = Common.parse_json "book.json" in 
-  print_endline json_parsed.
+  (* let build_dir = (Filename.dirname Sys.argv.(0)) in  *)
+  print_endline Common.message;
+  Common.parse_json_demo "/Users/zw/code/ocaml_programming/ocaml_in_action_tmp/tmp/book.json"
+
+
