@@ -12,6 +12,6 @@ open Core;;
 (* #load will load compile module's compiled bytecode. The module will be available for use *)
 (* Why load compile library doesn't work *)
 (* #directory "_build/default/lib";; *)
-(* #load "_build/default/lib/tools/.tools.objs/byte/tools.cmo";;  *)
-(* #load "_build/default/lib/tools/.tools.objs/byte/tools__Common.cmo";; *)
-(* #load "_build/default/lib/tools/.tools.objs/byte/tools__Math.cmo" *)
+#load "_build/default/lib/tools/.tools.objs/byte/tools.cmo";;  
+#load "_build/default/lib/tools/.tools.objs/byte/tools__Common.cmo";;
+#load "_build/default/lib/tools/.tools.objs/byte/tools__Math.cmo"

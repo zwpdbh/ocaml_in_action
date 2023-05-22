@@ -69,8 +69,11 @@ dune exec -- bin/hello_lwt/hello_lwt.exe
 - We could load all function from our 
 - See [Load vs Use](https://courses.cs.cornell.edu/cs3110/2021sp/textbook/modules/toplevel.html)
   - `#load` will load bytecode and makes the module available.
+    - It is better to use `#load` since it reflects how other code interact with it.  
   - `#use` is textual inclusion: it's like typing the contents of the file directly into the toplevel. So, it doesn't cause a module to be available. The functions in the module can be accessed directly. 
-
+    - There is a convonient plugin in vscode: "ocaml_toplevel_loader". After install it, if we want to interact with functions defined in some `.ml` file:
+      - Run `utop` first. 
+      - Then, click the small arrow button to load the content of that file into toplevel using `#use`.
 # Summary 
 ## Some definitions 
   - `dune-package` is usually contains one `package` which includes the code in the repo. 
