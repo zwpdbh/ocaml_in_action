@@ -1,3 +1,6 @@
+# Description
+This project describes my journey of learning OCaml. 
+
 # How to init project 
 - Git clone it into a project. 
 - Cd into that project, run 
