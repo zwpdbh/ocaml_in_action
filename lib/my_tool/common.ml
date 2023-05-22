@@ -27,7 +27,9 @@ type json = [
   | `String of string
 ]
 
-(* see: https://medium.com/@aleksandrasays/tutorial-parsing-json-with-ocaml-579cc054924f *)
+(* see: https://medium.com/@aleksandrasays/tutorial-parsing-json-with-ocaml-579cc054924f \
+  also see: https://dev.realworldocaml.org/json.html   
+*)
 let parse_json_demo json_file = 
   let buf = In_channel.read_all json_file in 
   let json = Yojson.Basic.from_string buf in 
