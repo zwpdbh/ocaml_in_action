@@ -11,9 +11,12 @@ doc: "https://url/to/documentation"
 bug-reports: "https://github.com/zwpdbgh/ocaml_in_action/issues"
 depends: [
   "ocaml"
+  "core"
   "dune" {>= "3.7"}
   "lwt"
   "yojson"
+  "cohttp"
+  "caqti"
   "odoc" {with-doc}
 ]
 build: [

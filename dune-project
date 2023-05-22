@@ -21,9 +21,12 @@
   (description "A longer description")
   (depends 
     ocaml 
+    core
     dune
     lwt 
     yojson
+    cohttp
+    caqti
     )
   (tags
     (topics "to describe" your project)))

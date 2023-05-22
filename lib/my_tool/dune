@@ -1,2 +1,3 @@
 (library 
- (name my_tool))
+ (name my_tool)
+ (libraries core yojson))
