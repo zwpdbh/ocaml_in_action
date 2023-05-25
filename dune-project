@@ -27,6 +27,8 @@
     yojson
     cohttp
     caqti
+    eio_main
+    utop
     )
   (tags
     (topics "to describe" your project)))

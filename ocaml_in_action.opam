@@ -17,6 +17,8 @@ depends: [
   "yojson"
   "cohttp"
   "caqti"
+  "eio_main"
+  "utop"
   "odoc" {with-doc}
 ]
 build: [

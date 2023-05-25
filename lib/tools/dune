@@ -1,3 +1,3 @@
 (library 
  (name tools)
- (libraries core yojson))
+ (libraries core yojson eio_main))
