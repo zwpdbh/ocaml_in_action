@@ -1,0 +1,4 @@
+(executable
+ ; (public_name eio_demos) 
+ (name eio_playground)
+ (libraries eio_main))
