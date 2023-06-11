@@ -77,21 +77,20 @@ For example, let's add `yojson` to our project to handle json.
   - We could define multiple such files in differet folders. Therefore, we could cd into different folders to init toplevel with different commands.
 - We cd into that folder, run `utop`. It will automatically execute the commands in the `.ocamlinit` file.
 
-## Init the toplevel with a module from project
+## Load a module from project into utop
 
-- We could load all function from our
-- See [Load vs Use](https://courses.cs.cornell.edu/cs3110/2021sp/textbook/modules/toplevel.html)
+- [Load vs Use](https://courses.cs.cornell.edu/cs3110/2021sp/textbook/modules/toplevel.html)
   - `#load` will load bytecode and makes the module available.
     - It is better to use `#load` since it reflects how other code interact with it.
   - `#use` is textual inclusion: it's like typing the contents of the file directly into the toplevel. So, it doesn't cause a module to be available. The functions in the module can be accessed directly.
     - There is a convonient plugin in vscode: "ocaml_toplevel_loader". After install it, if we want to interact with functions defined in some `.ml` file:
       - Run `utop` first.
       - Then, click the small arrow button to load the content of that file into toplevel using `#use`.
-  - If we want to load a module from local source code in utop, the best solution is
-    ```utop
-    #mod_use "basics/ch05_modules.ml";;
-    open Ch05_modules.ListQueue;;
-    ```
+- If we want to load a module from local source code in utop, the best solution is
+  ```utop
+  #mod_use "basics/ch05_modules.ml";;
+  open Ch05_modules.ListQueue;;
+  ```
 
 # Summary
 
