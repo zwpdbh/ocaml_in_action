@@ -53,7 +53,36 @@ For example, let's add `yojson` to our project to handle json.
 
 # How to build our own library and use it in another programm.
 
-- Say we want to wrap the features of parse json into our code as library. Then use it in another .exe programm.
+- For example, we want to wrap the features of parse json into our code as library. Then use it in another .exe programm.
+- Create library:
+
+  - Create folder `tools`
+  - Define dune file in folder `tools`.
+    ```utop
+    (library
+      (name tools)
+      (libraries core yojson))
+    ```
+    - This will create a library `tools` since a library is a collection of modules (usually each module -- each file).
+  - Create module file such as `common.ml` and define parse function in it.
+    - This will create a moudle
+
+- Use library
+  - In the dune file which defines `exe`
+    ```utop
+    (executable
+      (name main)
+      (libraries tools))
+    ```
+  - In `main.ml`
+    ```ocaml
+    open Tools
+    ...
+    Common.parse_json_demo "json_file_path"
+    ...
+    ```
+    - use `open` to open library
+    - use `Common` to refer to the module we defined.
 
 # How to use a module in utop
 
