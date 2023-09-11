@@ -1,6 +1,6 @@
 # Description
 
-This project describes my journey of learning OCaml.
+This project describes my first attempt to learn OCaml, especially how to use dune to manage project.
 
 # How to init project
 
