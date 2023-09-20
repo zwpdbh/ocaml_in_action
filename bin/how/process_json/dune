@@ -1,3 +1,9 @@
 (executable
  (name main)
+ (libraries tools)
+ (modules main))
+
+(executable
+ (name example01)
+ (modules example01)
  (libraries tools))
