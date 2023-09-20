@@ -5,7 +5,7 @@
 (generate_opam_files true)
 
 (source
-  (github zwpdbgh/ocaml_in_action))
+ (github zwpdbgh/ocaml_in_action))
 
 (authors "Wei Zhao")
 
@@ -15,22 +15,21 @@
 
 (documentation https://url/to/documentation)
 
-(package 
-  (name ocaml_in_action)
-  (synopsis "A short synopsis")
-  (description "A longer description")
-  (depends 
-    ocaml 
-    core
-    dune
-    lwt 
-    yojson
-    cohttp
-    caqti
-    eio_main
-    utop
-    )
-  (tags
-    (topics "to describe" your project)))
+(package
+ (name ocaml_in_action)
+ (synopsis "A short synopsis")
+ (description "A longer description")
+ (depends
+  ocaml
+  core
+  dune
+  lwt
+  yojson
+  cohttp
+  caqti
+  ; eio_main
+  utop)
+ (tags
+  (topics "to describe" your project)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
